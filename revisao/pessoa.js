@@ -3,8 +3,9 @@ var empresa;
 (function (empresa) {
     var Pessoa = /** @class */ (function () {
         //criando um construtor
-        function Pessoa(cpf) {
+        function Pessoa(nome, cpf) {
             this.cpf = cpf;
+            this.nome = nome;
         }
         //Mostrar o valor
         Pessoa.prototype.getNome = function () {
@@ -17,12 +18,10 @@ var empresa;
             return this.idade;
         };
         //alteração do valor
-        Pessoa.prototype.setNome = function (nome) {
-            this.nome = nome;
-        };
         Pessoa.prototype.setIdade = function (idade) {
             this.idade = idade;
         };
         return Pessoa;
     }());
+    empresa.Pessoa = Pessoa;
 })(empresa || (empresa = {}));

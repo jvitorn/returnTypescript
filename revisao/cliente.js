@@ -38,5 +38,5 @@ var empresa;
             this.codCliente = codCliente;
         };
         return Cliente;
-    }(Pessoa));
+    }(empresa.Pessoa));
 })(empresa || (empresa = {}));

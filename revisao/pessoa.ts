@@ -1,13 +1,13 @@
 namespace empresa{
-    class Pessoa{
+    export class Pessoa{
         //caracteristicas da classe 
         private nome:string | undefined;
         private cpf:string ;
         private idade:number | undefined;
         //criando um construtor
-        constructor(cpf:string){
+        constructor(nome:string,cpf:string){
             this.cpf = cpf;
-
+            this.nome = nome;
 
         }
         //Mostrar o valor
@@ -21,9 +21,6 @@ namespace empresa{
             return  this.idade;
         }
         //alteração do valor
-        setNome(nome:string):void{
-            this.nome = nome;
-        }
         setIdade(idade:number):void{
             this.idade = idade;
         }
