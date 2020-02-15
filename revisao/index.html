@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="row p-3">
-            <div class="col-md">
+            <div class="col-md-12">
                 <h3 class="h3">Nome:</h3>
                 <span id="nome"></span>
                 <h3 class="h3">Idade:</h3>
@@ -19,8 +19,31 @@
                 <span id="cpf"></span>
             </div>
         </div>
+        <div class="row p-3">
+            <div class="col-md-12">
+            <table class="table">
+            <tr>
+                <th>Codigo</th>
+                <th>Nome</th>
+                <th>Cpf</th>
+                <th>Saldo</th>
+                <th>Limite</th>
+                <th>Idade</th>
+            </tr>
+            <tr>
+                <td id="codC"></td>
+                <td id="nomeC"></td>
+                <td id="cpfC"></td>
+                <td id="saldoC"></td>
+                <td id="limiteC"></td>
+                <td id="idadeC"></td>
+            </tr>
+            </table>
+            </div>
+        </div>
     </div>
     <script src="pessoa.js"></script>
+    <script src="cliente.js"></script>
     <script src="implementa.js"></script>
 </body>
 </html>

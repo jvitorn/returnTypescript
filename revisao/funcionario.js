@@ -14,32 +14,29 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var empresa;
 (function (empresa) {
-    var Cliente = /** @class */ (function (_super) {
-        __extends(Cliente, _super);
-        function Cliente(nome, cpf, cod) {
+    var Funcionario = /** @class */ (function (_super) {
+        __extends(Funcionario, _super);
+        function Funcionario(nome, cpf, cod) {
             var _this = _super.call(this, nome, cpf) || this;
-            _this.codCliente = cod;
+            _this.codFuncionario = cod;
             return _this;
         }
-        Cliente.prototype.getSaldo = function () {
-            return this.saldo;
+        Funcionario.prototype.getCodFuncionario = function () {
+            return this.codFuncionario;
         };
-        Cliente.prototype.getLimite = function () {
-            return this.saldo;
+        Funcionario.prototype.getValorDia = function () {
+            return this.valorDia;
         };
-        Cliente.prototype.getCodCliente = function () {
-            return this.saldo;
+        Funcionario.prototype.setCodFuncionario = function (codFuncionario) {
+            this.codFuncionario = codFuncionario;
         };
-        Cliente.prototype.setSaldo = function (saldo) {
-            this.saldo = saldo;
+        Funcionario.prototype.setValorDia = function (valorDia) {
+            this.valorDia = valorDia;
         };
-        Cliente.prototype.setLimite = function (limite) {
-            this.limite = limite;
+        Funcionario.prototype.calcularSalario = function () {
+            return this.valorDia * 30;
         };
-        Cliente.prototype.setCodCliente = function (codCliente) {
-            this.codCliente = codCliente;
-        };
-        return Cliente;
+        return Funcionario;
     }(empresa.Pessoa));
-    empresa.Cliente = Cliente;
+    empresa.Funcionario = Funcionario;
 })(empresa || (empresa = {}));
