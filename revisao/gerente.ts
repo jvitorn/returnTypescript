@@ -4,7 +4,7 @@ namespace empresa{
 
         
         getSetor():string|undefined{
-            return this.getSetor();
+            return this.setor;
         }
         setSetor(setor:string):void{
             this.setor = setor;

@@ -20,7 +20,7 @@ var empresa;
             return _super !== null && _super.apply(this, arguments) || this;
         }
         Gerente.prototype.getSetor = function () {
-            return this.getSetor();
+            return this.setor;
         };
         Gerente.prototype.setSetor = function (setor) {
             this.setor = setor;
