@@ -30,7 +30,44 @@ namespace empresa{
     codigoCliente.textContent = c.getCodCliente().toString();
     limiteCliente.textContent = c.getLimite().toString();
     saldoCliente.textContent = c.getSaldo().toString();
+// --------------------------------------------------------------------------------------------------------------------------------------------
+    const f = new Funcionario("Claudio Dollynho","458.589.478-58",456);
+    f.setIdade(32);
+    f.setValorDia(100);
 
+    let nomeFuncionario = document.getElementById('nomeF');
+    let codigoFuncionario = document.getElementById('codF');
+    let cpfFuncionario = document.getElementById('cpfF');
+    let valorDiaFuncionario = document.getElementById('valorDiaF');
+    let salarioFuncionario = document.getElementById('salarioF');
+    let idadeFuncionario = document.getElementById('idadeF');
 
+    nomeFuncionario.textContent = f.getNome();
+    codigoFuncionario.textContent = f.getCodFuncionario().toString();
+    cpfFuncionario.textContent = f.getCpf();
+    valorDiaFuncionario.textContent = "R$" + f.getValorDia().toString();
+    salarioFuncionario.textContent = "R$" + f.calcularSalario();
+    idadeFuncionario.textContent = f.getIdade().toString();
+// --------------------------------------------------------------------------------------------------------------------------------------------
+    const g = new Gerente("Oswaldo","875.587.986-96",324);
+    g.setIdade(54);
+    g.setValorDia(130);
+    g.setSetor("T.I");
+
+    let nomeGerente = document.getElementById('nomeG');
+    let codigoGerente = document.getElementById('codG');
+    let cpfGerente = document.getElementById('cpfG');
+    let valorDiaGerente = document.getElementById('valorDiaG');
+    let salarioGerente = document.getElementById('salarioG');
+    let idadeGerente = document.getElementById('idadeG');
+    let setorGerente = document.getElementById('setorG');
+
+    nomeGerente.textContent = g.getNome();
+    codigoGerente.textContent = g.getCodFuncionario().toString();
+    cpfGerente.textContent = g.getCpf();
+    valorDiaGerente.textContent = "R$" + g.getValorDia().toString();
+    salarioGerente.textContent = "R$" + g.calcularSalario();
+    idadeGerente.textContent = g.getIdade().toString();
+    setorGerente.textContent = g.getSetor().toString();
 
 }

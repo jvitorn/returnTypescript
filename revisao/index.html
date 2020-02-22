@@ -9,17 +9,33 @@
 </head>
 <body>
     <div class="container">
+        <!-- Pessoa -->
         <div class="row p-3">
+            <h2 class="h2">Instancia de Pessoa</h2>
             <div class="col-md-12">
-                <h3 class="h3">Nome:</h3>
+            <table class="table">
+            <tr>
+                <th>Nome:</th>
+                <th>Idade:</th>
+                <th>CPF:</th>
+            </tr>
+            <tr>
+                <td id="nome"></td>
+                <td id="idade"></td>
+                <td id="cpf"></td>
+            </tr>
+            </table>
+                <!-- <h3 class="h3">Nome:</h3>
                 <span id="nome"></span>
                 <h3 class="h3">Idade:</h3>
                 <span id="idade"></span>
                  <h3 class="h3">CPF:</h3>
-                <span id="cpf"></span>
+                <span id="cpf"></span> -->
             </div>
         </div>
+        <!-- Clientes -->
         <div class="row p-3">
+            <h2 class="h2">Instancia de Clientes</h2>
             <div class="col-md-12">
             <table class="table">
             <tr>
@@ -41,9 +57,63 @@
             </table>
             </div>
         </div>
+        <!-- Funcionario -->
+        <div class="row p-3">
+            <h2 class="h2">Instancia de Funcionarios</h2>
+            <div class="col-md-12">
+            <table class="table">
+            <tr>
+                <th>Codigo</th>
+                <th>Nome</th>
+                <th>Cpf</th>
+                <th>Valor Hora</th>
+                <th>Salario</th>
+                <th>Idade</th>
+            </tr>
+            <tr>
+                <td id="codF"></td>
+                <td id="nomeF"></td>
+                <td id="cpfF"></td>
+                <td id="valorDiaF"></td>
+                <td id="salarioF"></td>
+                <td id="idadeF"></td>
+            </tr>
+            </table>
+            </div>
+        </div>
+        <!-- Gerente -->
+        <div class="row p-3">
+            <h2 class="h2">Instancia de Gerentes</h2>
+            <div class="col-md-12">
+            <table class="table">
+            <tr>
+                <th>Codigo</th>
+                <th>Nome</th>
+                <th>Cpf</th>
+                <th>Valor Hora</th>
+                <th>Salario</th>
+                <th>Idade</th>
+                <th>Setor</th>
+            </tr>
+            <tr>
+                <td id="codG"></td>
+                <td id="nomeG"></td>
+                <td id="cpfG"></td>
+                <td id="valorDiaG"></td>
+                <td id="salarioG"></td>
+                <td id="idadeG"></td>
+                <td id="setorG"></td>
+            </tr>
+            </table>
+            </div>
+        </div>
+        
+        
     </div>
     <script src="pessoa.js"></script>
     <script src="cliente.js"></script>
+    <script src="funcionario.js"></script>
+    <script src="gerente.js"></script>
     <script src="implementa.js"></script>
 </body>
 </html>
