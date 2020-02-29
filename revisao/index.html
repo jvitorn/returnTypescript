@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Revisao </title>
 </head>
-<body>
-    <div class="container">
+<body class="bg-dark text-white">
+    <div class="container text-white">
         <!-- Pessoa -->
         <div class="row p-3">
             <h2 class="h2">Instancia de Pessoa</h2>
             <div class="col-md-12">
-            <table class="table">
+            <table class="table text-white">
             <tr>
                 <th>Nome:</th>
                 <th>Idade:</th>
                 <th>CPF:</th>
             </tr>
             <tr>
-                <td id="nome"></td>
+                <td id="nome" class=""></td>
                 <td id="idade"></td>
                 <td id="cpf"></td>
             </tr>
@@ -37,7 +37,7 @@
         <div class="row p-3">
             <h2 class="h2">Instancia de Clientes</h2>
             <div class="col-md-12">
-            <table class="table">
+            <table class="table text-white">
             <tr>
                 <th>Codigo</th>
                 <th>Nome</th>
@@ -61,7 +61,7 @@
         <div class="row p-3">
             <h2 class="h2">Instancia de Funcionarios</h2>
             <div class="col-md-12">
-            <table class="table">
+            <table class="table text-white">
             <tr>
                 <th>Codigo</th>
                 <th>Nome</th>
@@ -85,7 +85,7 @@
         <div class="row p-3">
             <h2 class="h2">Instancia de Gerentes</h2>
             <div class="col-md-12">
-            <table class="table">
+            <table class="table text-white">
             <tr>
                 <th>Codigo</th>
                 <th>Nome</th>
@@ -107,13 +107,44 @@
             </table>
             </div>
         </div>
+        <!-- Empresa -->
+        <div class="row p-3">
+            <h2 class="h2">Instancia de Empresas</h2>
+            <div class="col-md-12">
+            <table class="table text-white">
+            <tr>
+                <th>Nome</th>
+                <th>Atividade</th>
+                <th>Cidade</th>
+            </tr>
+            <tr>
+                <td id="nomeE"></td>
+                <td id="atividadeE"></td>
+                <td id="cidadeE"></td>
+            </tr>
+            </table>
+            </div>
+        </div>
+        <!-- Funcionario da empresa-->
+        <div class="row p-3">
+            <h2 class="h2">Instancia de Funcionarios</h2>
+            <div class="col-md-12">
+            <table class="table table-striped table-dark text-white" id="tbFuncionario">
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nome</th>
+                </tr>
+            </table>
+            </div>
+        </div>
         
         
     </div>
-    <script src="pessoa.js"></script>
-    <script src="cliente.js"></script>
-    <script src="funcionario.js"></script>
-    <script src="gerente.js"></script>
-    <script src="implementa.js"></script>
+    <script src="js/pessoa.js"></script>
+    <script src="js/cliente.js"></script>
+    <script src="js/funcionario.js"></script>
+    <script src="js/gerente.js"></script>
+     <script src="js/empresa.js"></script>
+    <script src="js/implementa.js"></script>
 </body>
 </html>

@@ -16,7 +16,7 @@ namespace empresa{
     c.setIdade(50);
     c.setLimite(3000);
     c.setSaldo(2000);
-
+    //vars
     let nomeCliente = document.getElementById('nomeC');
     let cpfCliente  = document.getElementById('cpfC');
     let idadeCliente = document.getElementById('idadeC');
@@ -34,7 +34,7 @@ namespace empresa{
     const f = new Funcionario("Claudio Dollynho","458.589.478-58",456);
     f.setIdade(32);
     f.setValorDia(100);
-
+    //vars
     let nomeFuncionario = document.getElementById('nomeF');
     let codigoFuncionario = document.getElementById('codF');
     let cpfFuncionario = document.getElementById('cpfF');
@@ -53,7 +53,7 @@ namespace empresa{
     g.setIdade(54);
     g.setValorDia(130);
     g.setSetor("T.I");
-
+    //vars
     let nomeGerente = document.getElementById('nomeG');
     let codigoGerente = document.getElementById('codG');
     let cpfGerente = document.getElementById('cpfG');
@@ -69,5 +69,31 @@ namespace empresa{
     salarioGerente.textContent = "R$" + g.calcularSalario();
     idadeGerente.textContent = g.getIdade().toString();
     setorGerente.textContent = g.getSetor().toString();
+// --------------------------------------------------------------------------------------------------------------------------------------------
+    const e = new Empresa();
+    e.setNomeEmpresa('JonatasCorp');
+    e.setCidade("Umbrella");
+    e.setAtividade('T.I');
+    e.addCliente(c); 
+    e.addFuncionario(f);
+    e.addFuncionario(g); 
+    //vars
+    let nomeEmpresa = document.getElementById('nomeE');
+    let cidadeEmpresa = document.getElementById('cidadeE');
+    let atividadeEmpresa = document.getElementById('atividadeE');
+    let tbFuncionario = document.getElementById('tbFuncionario');
+
+    nomeEmpresa.textContent = e.getNomeEmpresa();
+    cidadeEmpresa.textContent = e.getCidade();
+    atividadeEmpresa.textContent = e.getAtividade();
+
+    e.getFuncionario().forEach(e => {
+        let nomeGerenteEmpresa = e.getNome();
+        if(e instanceof Gerente){
+            nomeGerenteEmpresa += " - Gerente";
+        }
+        tbFuncionario.innerHTML += "<tr><td>"+nomeGerenteEmpresa+"</td><td>"+e.getCodFuncionario()+"</td></tr>";
+    });
+    
 
 }
